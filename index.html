@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RecruitPro</title>
   <style>
-    /* === Color Palette === */
+    /* === New Color Palette === */
     :root {
-      --primary: #1E3A8A; /* Deep Navy Blue */
-      --secondary: #3B82F6; /* Soft Blue */
-      --accent: #F59E0B; /* Warm Amber */
-      --background: #F9FAFB; /* Light Gray */
-      --text: #111827; /* Almost Black */
+      --darkblue: #5D688A;
+      --pink: #F7A5A5;
+      --peach: #FFDBB6;
+      --background: #FFF2EF;
+      --text: #333333;
     }
 
     body {
@@ -23,7 +23,7 @@
 
     /* Navbar */
     nav {
-      background: var(--primary);
+      background: var(--darkblue);
       color: white;
       padding: 1rem 2rem;
       display: flex;
@@ -45,7 +45,7 @@
       transition: color 0.2s;
     }
     nav .links button:hover {
-      color: var(--accent);
+      color: var(--peach);
     }
 
     /* Container */
@@ -58,7 +58,7 @@
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: var(--primary);
+      color: var(--darkblue);
     }
 
     /* Job Cards */
@@ -71,7 +71,8 @@
       background: white;
       padding: 1rem;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border: 2px solid var(--peach);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       cursor: pointer;
       transition: transform 0.2s;
     }
@@ -80,7 +81,7 @@
     }
     .job-card h3 {
       margin: 0;
-      color: var(--primary);
+      color: var(--darkblue);
     }
     .job-card p {
       margin: 0.3rem 0;
@@ -97,18 +98,18 @@
       border: none;
     }
     .btn-primary {
-      background: var(--secondary);
+      background: var(--pink);
       color: white;
     }
     .btn-primary:hover {
-      background: #2563eb;
+      background: #e68b8b;
     }
     .btn-accent {
-      background: var(--accent);
-      color: white;
+      background: var(--peach);
+      color: #333;
     }
     .btn-accent:hover {
-      background: #d97706;
+      background: #f4c696;
     }
 
     /* Dashboard Sections */
@@ -119,7 +120,8 @@
       background: white;
       padding: 1rem;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border: 2px solid var(--pink);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     .card div {
       padding: 0.5rem 0;
@@ -130,7 +132,8 @@
     }
     .status {
       font-size: 0.85rem;
-      color: #666;
+      color: var(--darkblue);
+      margin-left: 8px;
     }
   </style>
 </head>
